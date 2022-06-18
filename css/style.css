@@ -14,24 +14,25 @@ img {
   width: 100%;
 }
 
-header {
+#div_header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: column;
   min-width: 100%;
   align-items: start;
   justify-items: center;
   background-color: white;
 }
-header > img {
+#div_header > img {
   width: 50px;
   height: 50px;
   justify-items: center;
 }
 
-h1 {
+h2 {
   text-align: center;
+  color: red;
 }
-h1 > #div_header {
+h2 > #div_header {
   place-items: center;
   text-align: center;
   width: 100%;
@@ -40,14 +41,19 @@ h1 > #div_header {
 main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
   place-items: center;
   text-align: center;
+  margin: 20px;
 }
 
 .div_main {
   min-height: 100%;
-  max-width: 50%;
+  min-width: 50%;
   background-color: white;
+}
+.div_main > h3 {
+  color: red;
 }
 .div_main > p {
   padding: 20px;
@@ -58,10 +64,10 @@ main {
   height: 60%;
   padding: 20px;
 }
-
 footer {
   display: grid;
   grid-auto-flow: column;
   place-items: center;
   background-color: rgba(15, 6, 6, 0.397);
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
